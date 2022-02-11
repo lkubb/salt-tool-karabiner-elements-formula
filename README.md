@@ -45,7 +45,9 @@ tool:
 The following shows an example of `tool-karabiner` pillar configuration. Namespace it to `tool:users` and/or `tool:karabiner:users`.
 ```yaml
 user:
-  dotconfig: true                   # sync this user's config from a dotfiles repo available as salt://dotconfig/<user>/karabiner or salt://dotconfig/karabiner
+  # sync this user's config from a dotfiles repo available as
+  # salt://dotconfig/<user>/karabiner or salt://dotconfig/karabiner
+  dotconfig: true
 ```
 
 #### Formula-specific
