@@ -10,7 +10,7 @@ Karabiner Elements configuration is synced for user '{{ user.name }}':
       - salt://dotconfig/{{ user.name }}/karabiner
       - salt://dotconfig/karabiner
     - context:
-        user: {{ user }}
+        user: {{ user | json }}
     - template: jinja
     - user: {{ user.name }}
     - group: {{ user.group }}
