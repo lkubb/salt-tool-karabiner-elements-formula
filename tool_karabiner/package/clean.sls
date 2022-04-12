@@ -9,6 +9,7 @@
 include:
   - {{ sls_config_clean }}
 
+
 Karabiner Elements is removed:
   pkg.removed:
     - name: {{ karabiner.lookup.pkg.name }}

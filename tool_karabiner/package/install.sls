@@ -5,6 +5,7 @@
 {%- set tplroot = tpldir.split('/')[0] %}
 {%- from tplroot ~ "/map.jinja" import mapdata as karabiner with context %}
 
+
 Karabiner Elements is installed:
   pkg.installed:
     - name: {{ karabiner.lookup.pkg.name }}
