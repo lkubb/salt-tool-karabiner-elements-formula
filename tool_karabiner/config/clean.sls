@@ -1,7 +1,10 @@
-# -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{%- set tplroot = tpldir.split('/')[0] %}
+{#-
+    Removes the configuration of the Karabiner Elements package.
+#}
+
+{%- set tplroot = tpldir.split("/")[0] %}
 {%- from tplroot ~ "/map.jinja" import mapdata as karabiner with context %}
 
 
@@ -9,9 +12,9 @@
 
 Karabiner Elements config file is cleaned for user '{{ user.name }}':
   file.absent:
-    - name: {{ user['_karabiner'].conffile }}
+    - name: {{ user["_karabiner"].conffile }}
 
 Karabiner Elements config dir is absent for user '{{ user.name }}':
   file.absent:
-    - name: {{ user['_karabiner'].confdir }}
+    - name: {{ user["_karabiner"].confdir }}
 {%- endfor %}
