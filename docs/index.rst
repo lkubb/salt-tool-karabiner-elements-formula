@@ -1,5 +1,5 @@
-Welcome to salt-tool-karabiner-formula's documentation!
-=======================================================
+Welcome to tool-karabiner-formula's documentation!
+==================================================
 
 .. toctree::
    :maxdepth: 2
